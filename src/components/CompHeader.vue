@@ -5,52 +5,52 @@ export default{
         return{
             ArrayLinksMenu:[
                 {
-                    nome: 'Character',
+                    nome: 'CHARACTER',
                     link: '#',
                     valore: 'false'
                 },
                 {
-                    nome: 'Comics',
+                    nome: 'COMICS',
                     link: '#',
                     valore: '',
                 },
                 {
-                    nome: 'Movies',
+                    nome: 'MOVIES',
                     link: '#',
                     valore: 'false',
                 },
                 {
-                    nome: 'Tv',
+                    nome: 'TV',
                     link: '#',
                     valore: 'false',
                 },
                 {
-                    nome: 'Games',
+                    nome: 'GAMES',
                     link: '#',
                     valore: 'false',
                 },
                 {
-                    nome: 'Collectibles',
+                    nome: 'COLLECTIBLES',
                     link: '#',
                     valore: 'false',
                 },
                 {
-                    nome: 'Videos',
+                    nome: 'VIDEOS',
                     link: '#',
                     valore: 'false',
                 },
                 {
-                    nome: 'Fans',
+                    nome: 'FANS',
                     link: '#',
                     valore: 'false',
                 },
                 {
-                    nome: 'News',
+                    nome: 'NEWS',
                     link: '#',
                     valore: 'false',
                 },
                 {
-                    nome: 'Shop',
+                    nome: 'SHOP',
                     link: '#',
                     valore: 'shop',
                 },
@@ -66,7 +66,7 @@ export default{
 
     <header>
         <figure>
-            <img src="../assets/img/dc-logo.png" alt="">
+            <img src="../assets/img/dc-logo.png" width="80" alt="logo">
         </figure>
 
         <nav>
@@ -90,29 +90,34 @@ export default{
 <style lang="scss" scoped>
 
 header{
-    background-color: white;
     height: 15vh;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+
     ul{
         display: flex;
         align-items: center;
-        background-color: orange;
         gap: 20px;
         li{
             display: flex;
             list-style-type: none;
-            color: red;
+            color: #3b383a;
         }
     }
 }
-p{
+main{
     background-color: #1c1c1c;
     height: 15vh;
     display: flex;
     align-items: center;
-    padding-left: 12%;
-    color: white;
+    p{
+        color: white;
+        width: 80%;
+        margin: 0 auto;
+    }
 }
 </style>
