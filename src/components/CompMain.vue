@@ -1,6 +1,6 @@
 <script>
 export default{
-    name: "CompHeader",
+    name: "CompMain",
     data(){
         return{
             ArrayLinksMenu:[
@@ -29,90 +29,67 @@ export default{
                     link: '#',
                     valore: 'false',
                 },
-                {
-                    nome: 'Collectibles',
-                    link: '#',
-                    valore: 'false',
-                },
-                {
-                    nome: 'Videos',
-                    link: '#',
-                    valore: 'false',
-                },
-                {
-                    nome: 'Fans',
-                    link: '#',
-                    valore: 'false',
-                },
-                {
-                    nome: 'News',
-                    link: '#',
-                    valore: 'false',
-                },
-                {
-                    nome: 'Shop',
-                    link: '#',
-                    valore: 'shop',
-                },
             ]
         }
     }
+
 }
 </script>
 
+
 <!-- ----------------------------------------------------------------------------- -->
+
+
 
 <template>
 
-    <header>
-        <figure>
-            <img src="../assets/img/dc-logo.png" alt="">
-        </figure>
-
-        <nav>
+        <header>
             <ul>
                 <li v-for="(element,index) in ArrayLinksMenu" :key="index">
                     <a :href="element.index">{{ element.nome }}</a>
                 </li>
             </ul>
-        </nav>
+        </header>
 
-    </header>
-    <main>
-        <p>--&gt; Content goes here &lt;--</p>
-    </main>
+        <main>
+            <div>
+                <h3>dc comics</h3>
+            </div>
 
+        </main>
+
+        <!-- <footer>
+
+        </footer> -->
 
 </template>
 
+
 <!-- ----------------------------------------------------------------------------- -->
 
-<style lang="scss" scoped>
 
+<style lang="scss" scoped>
 header{
-    background-color: white;
+    background-color: #0282f9;
     height: 15vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
     ul{
+        color: white;
         display: flex;
-        align-items: center;
-        background-color: orange;
-        gap: 20px;
+        gap: 60px;
         li{
-            display: flex;
             list-style-type: none;
-            color: red;
         }
     }
 }
-p{
-    background-color: #1c1c1c;
-    height: 15vh;
-    display: flex;
-    align-items: center;
-    padding-left: 12%;
-    color: white;
+main{
+    background-color: orange;
+    height: 40vh;
 }
+// footer{
+//     height: 15vh;
+//     background-color: #303030;
+// }
 </style>
