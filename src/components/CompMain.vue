@@ -3,10 +3,10 @@ export default{
     name: "CompMain",
     data(){
         return{
-            ArrayLinksMenu:[
+            ArrayBlueMenu:[
                 {
                     nome: 'DIGITAL COMICS',
-                    img: '../assets/img/buy-comics-digital-comics.png',
+                    img: '../assets/img/dc-logo.png',
                 },
                 {
                     nome: 'DC MERCHANDISE',
@@ -31,16 +31,13 @@ export default{
 }
 </script>
 
-
 <!-- ----------------------------------------------------------------------------- -->
-
-
 
 <template>
 
     <header>
         <ul>
-            <li v-for="(element, index) in ArrayLinksMenu" :key="index">
+            <li v-for="(element, index) in ArrayBlueMenu" :key="index">
                 <img :src="element.img" width="50" alt="dc">
                 <p>{{ element.nome }}</p> 
             </li>
@@ -108,9 +105,7 @@ export default{
 
 </template>
 
-
 <!-- ----------------------------------------------------------------------------- -->
-
 
 <style lang="scss" scoped>
 header{

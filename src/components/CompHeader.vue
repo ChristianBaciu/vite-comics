@@ -12,7 +12,7 @@ export default{
                 {
                     nome: 'COMICS',
                     link: '#',
-                    valore: '',
+                    valore: 'true',
                 },
                 {
                     nome: 'MOVIES',
@@ -79,7 +79,7 @@ export default{
 
     </header>
     <main>
-        <p>--&gt; Content goes here &lt;--</p>
+        <h2>--&gt; Content goes here &lt;--</h2>
     </main>
 
 
@@ -114,7 +114,7 @@ main{
     height: 15vh;
     display: flex;
     align-items: center;
-    p{
+    h2{
         color: white;
         width: 80%;
         margin: 0 auto;
