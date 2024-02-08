@@ -24,7 +24,7 @@ export default{
                     nome: 'DC POWER VISA',
                     img: 'buy-dc-power-visa.png',
                 },
-            ]
+            ],
         }
     }
 
@@ -34,11 +34,10 @@ export default{
 <!-- ----------------------------------------------------------------------------- -->
 
 <template>
-
     <header>
         <ul>
             <li v-for="(element, index) in ArrayBlueMenu" :key="index">
-                <img :src="`./src/assets/img/${element.img}`" width="60" alt="comics">
+                <img :src="`./src/assets/img/${element.img}`" width="40" alt="comics">
                 <p>{{ element.nome }}</p> 
             </li>
         </ul>
@@ -84,25 +83,18 @@ export default{
                 </div>
 
                 <div>
-                <h2>SITES</h2>
-                <ul>
-                    <li>DC</li>
-                    <li>MAD Magazine</li>
-                    <li>DC Kids</li>
-                    <li>DC Universe</li>
-                    <li>DC Power Visa</li>
-                </ul>
-            </div>
-
+                    <h2>SITES</h2>
+                    <ul>
+                        <li>DC</li>
+                        <li>MAD Magazine</li>
+                        <li>DC Kids</li>
+                        <li>DC Universe</li>
+                        <li>DC Power Visa</li>
+                    </ul>
+                </div>
             </section>
-
-            <figure>
-                <img src="../assets/img/dc-logo-bg.png" width="400" alt="logo-bg">
-            </figure>
-
         </nav>
     </main>
-
 </template>
 
 <!-- ----------------------------------------------------------------------------- -->
@@ -114,11 +106,12 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    ul{
 
+    ul{
         color: white;
         display: flex;
         gap: 60px;
+
         li{
             list-style-type: none;
             display: flex;
@@ -142,15 +135,10 @@ main{
         gap: 50px;
         justify-content: space-between;
         padding: 20px 0;
+        background-image: url('../assets/img/dc-logo-bg.png');
+        background-repeat: no-repeat;
+        background-position: right;
 
-        figure{
-            position: relative;
-            img{
-                position: absolute;
-                bottom: -50px;
-                right: 0px;
-            }
-        }
         section{
             display: flex;
             gap: 40px;

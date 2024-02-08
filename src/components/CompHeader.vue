@@ -155,15 +155,19 @@ export default{
         </ul>
     </header>
 
+    <div class="teamTitans">
+        <div class="buttonCurrent">
+            <h3>CURRENT SERIES</h3>
+        </div>
+    </div>
+
     <main>
 
+        <CompComics v-for="(element,index) in ArrayComics" :key="index" :propsThumb="element.thumb" :propsSeries="element.series"/>
 
-
-        <CompComics v-for="(element,index) in ArrayComics" :key="index" :propsThumb="element.thumb" :propsType="element.type"/>
-
-
-
-
+        <div class="button">
+            <h3>LOAD MORE</h3>
+        </div>
     </main>
 
 </template>
@@ -196,20 +200,39 @@ header{
     }
 }
 
-// .active{
-//     border-bottom: 4px solid #0282f9;
-// }
+.teamTitans{
+    background-image: url('../assets/img/jumbotron.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 45vh;
+    position: relative;
 
+    .buttonCurrent{
+        background-color: #0282f9;
+        width: 15%;
+        padding: 10px;
+        color: white;
+        text-align: center;
+        position: absolute;
+        bottom: -20px;
+        left: 50px;
+    }
+}
 
 main{
     display: flex;
-    color: white;
+    flex-wrap: wrap;
     padding: 50px;
-    // background-image: url('../assets/img/jumbotron.jpg');
-    // background-repeat: no-repeat;
-    // background-position: top;
-    // background-size: cover;
-    // display: flex;
-    // align-items: center;
+
+    .button{
+        background-color: #0282f9;
+        width: 15%;
+        padding: 10px;
+        color: white;
+        text-align: center;
+        margin: 0 auto;
+    }
+
 }
 </style>

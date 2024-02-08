@@ -17,7 +17,7 @@ export default{
             <h3>SIGN-UP NOW!</h3>
         </div>
 
-        <div class="ciao">
+        <div class="social">
             <h3>FOLLOW US</h3>
             <figure>
                 <img src="../assets/img/footer-facebook.png" alt="logo">
@@ -54,7 +54,7 @@ header{
             color: white;
             padding: 7px;
         }
-        .ciao{
+        .social{
             display: flex;
             align-items: center;
             h3{
