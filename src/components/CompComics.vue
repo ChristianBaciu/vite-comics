@@ -14,7 +14,7 @@ export default{
 
     <div>
         <figure>
-            <img :src="propsThumb" alt="titolo">
+            <img :src="propsThumb" alt="titolo" width="100">
         </figure>
     </div>
     <h3>{{propsType}}</h3>

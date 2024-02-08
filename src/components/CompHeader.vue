@@ -149,7 +149,7 @@ export default{
         </figure>
 
         <ul>
-            <li v-for="(element,index) in ArrayHeaderMenu" :key="index" :propsThumb="element.thumb" :propsType="element.type">
+            <li v-for="(element,index) in ArrayHeaderMenu" :key="index">
                 <a :href="element.index">{{ element.nome }}</a>
             </li>
         </ul>
@@ -159,7 +159,7 @@ export default{
 
 
 
-        <CompComics v-for="(element,index) in ArrayComics" :key="index"/>
+        <CompComics v-for="(element,index) in ArrayComics" :key="index" :propsThumb="element.thumb" :propsType="element.type"/>
 
 
 
