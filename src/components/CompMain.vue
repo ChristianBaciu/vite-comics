@@ -6,23 +6,23 @@ export default{
             ArrayBlueMenu:[
                 {
                     nome: 'DIGITAL COMICS',
-                    img: '../assets/img/dc-logo.png',
+                    img: 'buy-comics-digital-comics.png',
                 },
                 {
                     nome: 'DC MERCHANDISE',
-                    img: '../assets/img/buy-comics-merchandise.png',
+                    img: 'buy-comics-merchandise.png',
                 },
                 {
                     nome: 'SUBSCRIPTION',
-                    img: '../assets/img/buy-comics-subscriptions.png',
+                    img: 'buy-comics-subscriptions.png',
                 },
                 {
                     nome: 'COMIC SHOP LOCATOR',
-                    img: '../assets/img/buy-comics-shop-locator.png',
+                    img: 'buy-comics-shop-locator.png',
                 },
                 {
                     nome: 'DC POWER VISA',
-                    img: '../assets/img/buy-dc-power-visa.png',
+                    img: 'buy-dc-power-visa.png',
                 },
             ]
         }
@@ -38,7 +38,7 @@ export default{
     <header>
         <ul>
             <li v-for="(element, index) in ArrayBlueMenu" :key="index">
-                <img :src="element.img" width="50" alt="dc">
+                <img :src="`./src/assets/img/${element.img}`" width="60" alt="comics">
                 <p>{{ element.nome }}</p> 
             </li>
         </ul>

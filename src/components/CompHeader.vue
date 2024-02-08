@@ -3,7 +3,7 @@ export default{
     name: "CompHeader",
     data(){
         return{
-            ArrayLinksMenu:[
+            ArrayHeaderMenu:[
                 {
                     nome: 'CHARACTER',
                     link: '#',
@@ -63,7 +63,6 @@ export default{
 <!-- ----------------------------------------------------------------------------- -->
 
 <template>
-
     <header>
         <figure>
             <img src="../assets/img/dc-logo.png" width="80" alt="logo">
@@ -71,15 +70,19 @@ export default{
 
         <nav>
             <ul>
-                <li v-for="(element,index) in ArrayLinksMenu" :key="index">
+                <li v-for="(element,index) in ArrayHeaderMenu" :key="index">
                     <a :href="element.index">{{ element.nome }}</a>
                 </li>
             </ul>
         </nav>
-
     </header>
+
+
+
+
     <main>
-        <h2>--&gt; Content goes here &lt;--</h2>
+
+
     </main>
 
 
@@ -90,13 +93,11 @@ export default{
 <style lang="scss" scoped>
 
 header{
+    background-color: white;
     height: 15vh;
     display: flex;
-    display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 80%;
-        margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
 
     ul{
         display: flex;
@@ -105,19 +106,21 @@ header{
         li{
             display: flex;
             list-style-type: none;
-            color: #3b383a;
+            font-weight: bolder;
+            &:hover{
+            color: red;
+        }
+
         }
     }
 }
 main{
-    background-color: #1c1c1c;
-    height: 15vh;
+    background-image: url('../assets/img/jumbotron.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 45vh;
     display: flex;
     align-items: center;
-    h2{
-        color: white;
-        width: 80%;
-        margin: 0 auto;
-    }
 }
 </style>
